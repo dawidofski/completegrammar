@@ -1,0 +1,23 @@
+# Source EPUBs — immutable, kept local only (not committed)
+source/*.epub
+
+# Temporary inspection artifacts
+.inspect/
+
+# Python (local-only extraction tooling)
+__pycache__/
+*.pyc
+*.pyo
+
+# Intermediate raw extraction output (final data/book.json is committed)
+data/raw/
+
+# Generated review lists
+data/review/
+
+# OS noise
+Thumbs.db
+.DS_Store
+
+# Node (dev-time test harness)
+node_modules/
