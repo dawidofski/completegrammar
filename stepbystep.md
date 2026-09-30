@@ -71,7 +71,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` complete
   - Tests: assert 26 chapters, 175 sections; sample spot-check.
   - Acceptance: structure JSON matches the TOC hierarchy.
 
-- [ ] **Step 2.2 — Parser: exercises, questions, answers (positional join)**
+- [x] **Step 2.2 — Parser: exercises, questions, answers (positional join)**
   - Objective: extract exercises (`div.box`), numbered items (questions), and
     answer-key answers, joining by exercise ID + position.
   - Files: `tools/extract_exercises.py`.
