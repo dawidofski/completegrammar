@@ -178,9 +178,9 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` complete
 
 ---
 
-## Phase 12 — GitHub Pages deployment  `[ ]`
+## Phase 12 — GitHub Pages deployment  `[x]`
 
-- [ ] **Step 12.1 — Deploy & verify**
+- [x] **Step 12.1 — Deploy & verify**
 
 ---
 
