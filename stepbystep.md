@@ -172,9 +172,9 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` complete
 
 ---
 
-## Phase 11 — PWA / offline / Android  `[ ]` *(skip — online-only)*
+## Phase 11 — PWA / offline / Android  `[x]` *(skip — online-only)*
 
-- [ ] **Step 11.1 — Manifest + service worker + offline** *(skipped — online-only)*
+- [x] **Step 11.1 — Manifest + service worker + offline** *(skipped — online-only)*
 
 ---
 
