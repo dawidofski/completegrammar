@@ -119,55 +119,55 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` complete
 
 ---
 
-## Phase 4 — Basic mobile UI  `[~]`
+## Phase 4 — Basic mobile UI  `[x]`
 
 - [x] **Step 4.1 — App shell + mobile-first CSS**
   - Files: `index.html`, `css/app.css`, `js/app.js`.
-- [ ] **Step 4.2 — Render theory**
+- [x] **Step 4.2 — Render theory**
   - Files: `js/theory.js`.
-- [ ] **Step 4.3 — Render exercises & questions**
+- [x] **Step 4.3 — Render exercises & questions**
   - Files: `js/exercises.js`.
 
 ---
 
-## Phase 5 — Breadcrumb & navigation  `[ ]`
+## Phase 5 — Breadcrumb & navigation  `[x]`
 
-- [ ] **Step 5.1 — Breadcrumb navigation + prev/next**
+- [x] **Step 5.1 — Breadcrumb navigation + prev/next**
   - Files: `js/nav.js`.
 
 ---
 
-## Phase 6 — Answer checking  `[ ]`
+## Phase 6 — Answer checking  `[x]`
 
-- [ ] **Step 6.1 — Answer normalization & checking**
+- [x] **Step 6.1 — Answer normalization & checking**
   - Files: `js/answer.js`.
 
 ---
 
-## Phase 7 — Try Again / hints / "Why?"  `[ ]`
+## Phase 7 — Try Again / hints / "Why?"  `[x]`
 
-- [ ] **Step 7.1 — Feedback + Try Again**
+- [x] **Step 7.1 — Feedback + Try Again**
   - Files: `js/feedback.js`.
 
 ---
 
-## Phase 8 — Theory ↔ exercise sync  `[ ]`
+## Phase 8 — Theory ↔ exercise sync  `[x]`
 
-- [ ] **Step 8.1 — Automatic theory following + highlight**
+- [x] **Step 8.1 — Automatic theory following + highlight**
   - Files: `js/theorySync.js` (or folded into `js/theory.js`).
 
 ---
 
-## Phase 9 — Progress tracking  `[ ]`
+## Phase 9 — Progress tracking  `[x]`
 
-- [ ] **Step 9.1 — Progress recording & aggregates**
+- [x] **Step 9.1 — Progress recording & aggregates**
   - Files: `js/progress.js`.
 
 ---
 
-## Phase 10 — Review mistakes  `[ ]`
+## Phase 10 — Review mistakes  `[x]`
 
-- [ ] **Step 10.1 — Review list**
+- [x] **Step 10.1 — Review list**
   - Files: `js/review.js`.
 
 ---
