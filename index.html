@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Spanish Grammar</title>
+  <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+  <header class="app-header">
+    <div class="app-header-inner">
+      <h1 class="app-title">Complete Spanish Grammar</h1>
+      <div class="progress-pill" id="overall-progress">Loading…</div>
+    </div>
+  </header>
+
+  <nav class="breadcrumbs" id="breadcrumbs" aria-label="Breadcrumb"></nav>
+
+  <div class="layout">
+    <main class="content" id="content" aria-live="polite"></main>
+    <aside class="theory-panel" id="theory-panel" aria-label="Theory">
+      <div class="theory-panel-header">
+        <h2 class="theory-panel-title">Theory</h2>
+        <div class="theory-header-actions">
+          <button class="follow-toggle" id="follow-toggle" aria-pressed="true" title="Follow exercise">📌 Follow</button>
+          <button class="theory-close" id="theory-close" aria-label="Close theory">✕</button>
+        </div>
+      </div>
+      <div class="theory-panel-body" id="theory-body">
+        <p class="muted">Select a chapter to see theory.</p>
+      </div>
+    </aside>
+  </div>
+
+  <button class="theory-toggle" id="theory-toggle" aria-label="Show theory">📚 Theory</button>
+
+  <script src="js/vendor/dexie.min.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/import.js"></script>
+  <script src="js/answer.js"></script>
+  <script src="js/progress.js"></script>
+  <script src="js/review.js"></script>
+  <script src="js/feedback.js"></script>
+  <script src="js/theory.js"></script>
+  <script src="js/exercises.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
