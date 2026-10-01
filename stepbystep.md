@@ -102,7 +102,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` complete
 
 ---
 
-## Phase 3 — Data model & Dexie foundation  `[~]`
+## Phase 3 — Data model & Dexie foundation  `[x]`
 
 - [x] **Step 3.1 — Dexie schema + DB module**
   - Objective: implement schema v1 (no `parts` table — the book is flat) and
@@ -112,7 +112,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` complete
     answers, questionProgress, reviewItems, meta); helper queries.
   - Acceptance: schema matches the data model; versioned.
 
-- [ ] **Step 3.2 — One-time content import**
+- [x] **Step 3.2 — One-time content import**
   - Objective: load `data/book.json` into IndexedDB idempotently.
   - Files: `js/import.js`.
   - Acceptance: no duplication across reloads.
