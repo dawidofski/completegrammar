@@ -162,6 +162,8 @@ def main() -> None:
                     if ttype == "table":
                         img = el.find("img")
                         src = img.get("src") if img is not None else None
+                        if src is None:
+                            ttype = "paragraph"  # example sentence misusing 'images'
                     theory_blocks.append({
                         "id": f"{ch_id}_tb_{tb_id}",
                         "chapterId": ch_id,

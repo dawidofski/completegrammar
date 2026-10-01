@@ -83,7 +83,7 @@ Status legend: `[ ]` not started · `[~]` in progress · `[x]` complete
     translation/vocab.
   - Acceptance: canonical answers stored separately; freeform questions flagged.
 
-- [ ] **Step 2.3 — Table recovery (cross-EPUB)**
+- [x] **Step 2.3 — Table recovery (cross-EPUB)**
   - Objective: for image tables (conjugation charts/vocab), recover text from
     the Premium EPUB or mark for manual review.
   - Files: `tools/recover_tables.py`.

@@ -97,7 +97,7 @@ def extract_box(div):
             if t:
                 passages.append(t)
         elif chc == "image-e":
-            img = ch.find("img")
+            img = ch.find(".//img")
             image = img.get("src") if img is not None else ""
     return instruction, items, passages, image
 
