@@ -11,6 +11,11 @@ var App = (function () {
     return n;
   }
 
+  function truncate(s, n) {
+    s = String(s == null ? '' : s).replace(/\s+/g, ' ').trim();
+    return s.length > n ? s.slice(0, n - 1) + '\u2026' : s;
+  }
+
   function renderBreadcrumb(items) {
     var bc = document.getElementById('breadcrumbs');
     bc.innerHTML = '';
@@ -115,15 +120,27 @@ var App = (function () {
               content.appendChild(el('h3', 'section-title', 'Exercises (' + exercises.length + ')'));
               var ul2 = el('ul', 'list');
               exercises.forEach(function (ex) {
-                var label = ex.number ? ('Exercise ' + ex.number) : 'Reading Comprehension';
+                var label = ex.number
+                  ? ('Exercise ' + ex.number)
+                  : truncate(ex.instruction || 'Self-check', 70);
                 var btn = el('button', 'list-item');
                 btn.appendChild(el('span', 'item-title', label));
                 var st = map[ex.id];
                 var meta = ex.kind;
-                if (st && st.total > 0) {
-                  meta = st.correct + '/' + st.total + ' correct';
+                if (st) {
+                  if (st.graded > 0) {
+                    meta = st.correct + '/' + st.graded + ' correct';
+                  } else if (st.freeform > 0) {
+                    meta = st.done + '/' + st.freeform + ' done';
+                  }
                 }
-                btn.appendChild(el('span', 'item-meta', meta));
+                var right = el('span', 'item-right');
+                right.appendChild(el('span', 'item-meta', meta));
+                if (st && st.complete) {
+                  btn.classList.add('item-done');
+                  right.appendChild(el('span', 'done-badge', '✓'));
+                }
+                btn.appendChild(right);
                 btn.addEventListener('click', function () { openExercise(ex); });
                 var li = el('li');
                 li.appendChild(btn);

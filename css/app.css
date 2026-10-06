@@ -346,3 +346,27 @@ html, body {
   }
   .theory-panel.open { display: flex; }
 }
+
+/* completion indicators */
+.item-right { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.list-item.item-done { border-color: #2e7d32; background: #f0f7f0; }
+.done-badge { color: #2e7d32; font-weight: 700; font-size: 1rem; }
+.done-row { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+.done-toggle {
+  min-height: 44px;
+  padding: 0 16px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--muted);
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.done-toggle.done {
+  border-color: #2e7d32;
+  color: #2e7d32;
+  background: #f0f7f0;
+  font-weight: 700;
+}
+.done-state { color: #2e7d32; font-weight: 700; font-size: 0.9rem; }
+.question-done { border-left: 4px solid #2e7d32; }
